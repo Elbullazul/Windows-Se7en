@@ -1648,6 +1648,12 @@ border-radius: 1px;
 	icon-size: 1em;
 	color: #2234ff;
 }
+.menu {
+	border: inset 1px solid rgba(20,20,20,0.5);
+	background-color: #D4CFC7;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 55px 1px 29px 1px;
+}
 
 /* ===================================================================
  * Window list (windowList.js)
