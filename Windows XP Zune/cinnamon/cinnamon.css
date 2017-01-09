@@ -1718,7 +1718,12 @@ border-radius: 1px;
     icon-size: 1em;
     color: #000;
 }
-
+.menu {
+    border: solid 1px transparent;
+    border-image: url("menu-bg.png") 12 12 67 42;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 55px 1px 29px 1px;
+}
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
 }
