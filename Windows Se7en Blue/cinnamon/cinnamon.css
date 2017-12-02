@@ -323,10 +323,12 @@ StScrollBar StButton#vhandle:hover {
 }
 #panelLeft .applet-box:first-child:hover {
     transition-duration: 200; background: url("orbs/OBB2.png");
+    transition-duration: 300;
     border-image: none;
 }
 #panelLeft .applet-box:first-child:active {
     background: url("orbs/OBB3.png");
+    transition-duration: 0;
     border-image: none;
 }
 
