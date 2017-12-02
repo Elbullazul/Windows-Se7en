@@ -292,7 +292,7 @@ StScrollBar StButton#vhandle:hover {
 #panel {
     background-color: #9CB5D1;
     box-shadow: none;
-    border-image: url("panel.png");
+    border-image: url("panel.png") 0 15 0 0;
     outline: 1px rgba(0,0,0,0.5);
     color: #fff;
     font-size: 9pt;
@@ -320,14 +320,15 @@ StScrollBar StButton#vhandle:hover {
     spacing: 4px;
 }
 
-/*
-#panelRight .applet-box:last-child {
-    border-image: url("panel-assets/ShowDesktop.png");
-    background-position: center center;
+
+#panelRight {
+    /*border-image: url("panel-assets/ShowDesktop.png) 0 15 0 0;*/
+    border-image-repeat: no-repeat;
     transition-duration: 300;
-    color: rgba(255,0,0,0) !important;
+    border: 0 solid transparent;
 }
 
+/*
 #panelRight .applet-box:last-child:hover {
     border-image: url("panel-assets/ShowDesktopHover.png");
 }
@@ -1629,6 +1630,13 @@ border-radius: 1px;
     padding-bottom: 0px;
 }
 
+.starkmenu-background {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-image: url('menu-assets/menu-bg.png') 12 12 67 42;
+    box-shadow: 16px -5px 20px 10px rgba(0,0,0,0.4);
+    border-radius: 6px 6px 0px 0px;
+}
+
 .menu-favorites-box {  
     margin: auto;
     background-color: #fff;
@@ -1731,9 +1739,8 @@ border-radius: 1px;
 
 .menu-category-button-selected {
     padding: 7px;
-    color: black;
 /*    background-color: #2975E9;*/
-    border-image: url('menu-assets/hover.png') 5;
+    border-image: url('menu-assets/hover2.png') 9;
 }
 
 .menu-category-button-label:ltr { 
@@ -2046,7 +2053,7 @@ border-radius: 1px;
     padding-left: 6px;
     padding-right: 6px;
     transition-duration: 300;
-    padding-top: 1px;
+    padding-top: 0;
 }
 .applet-box:hover {
     background-color: rgba(25,25,25,0);
